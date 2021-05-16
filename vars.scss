@@ -1,0 +1,77 @@
+@import './mixins/breakpoints';
+
+:root {
+    --defaultItemPadding: 15px;
+    
+    --defaultPagePadding: 20px;
+    --defaultPagePaddingTop: 50px;
+    
+    --defaultButtonPadding: .7em 1.1em;
+    --defaultButtonHeight: 45px;
+    
+    --defaultInputPadding: 10px;
+    
+    --defaultRadius: 3px;
+    
+    --fontSizeInput: 1em;
+    
+    --animDefault: .35s;
+    
+    
+    //--------------------------------------------------------------------------------
+    // new version:
+    
+    
+    --default-radius: 7px;
+    
+    --font: 'sans-serif', 'arial';
+    --font-bold: 'Open Sans Bold', sans-serif, 'arial';
+    --font-base-size: 16px;
+    
+    --color-red: #ff0000;
+    --color-green: #66FFCC;
+    --color-green-2: #3EC692;
+    --color-green-3: #2AF378;
+    --color-blue-3: #89E0F4;
+    --color-blue-2: #37C6F7;
+    --color-blue: #3976EE;
+    --color-blue-dark: #142643;
+    --color-purple: #623FEA;
+    --color-magenta: #A61FE5;
+    --color-magenta-2: #F33FFF;
+    --color-orange: #EAA824;
+    --color-white: #ffffff;
+    
+    --color-link: #90C3D4;
+    --color-link-hover: lighten(#90C3D4, 15);
+    --color-font: #fff;
+    --color-font-grey: #333;
+    --color-background: #fff; //#123;
+    
+    --button-radius: var(--default-radius);
+    --button-color-bg: var(--color-blue);
+    --button-color-font: var(--color-white);
+    --button-color-bg-hover: var(--color-blue);
+    --button-color-font-hover: white;
+    
+    --input-radius: var(--default-radius);
+    --input-padding: 10px;
+    --input-font-size: 1.18rem;
+    
+    // Text sizing:
+    --font-size-h1: 1rem;
+    --font-size-h2: 1.2;
+    
+    --gutter-default: 1vw;
+    
+    @include mobile {
+        --defaultPagePadding: 10px;
+        --defaultItemPadding: 10px;
+        --defaultRadius: 7px;
+        
+        // new:
+        
+        --gutter-default: 2vw;
+    }
+    
+}

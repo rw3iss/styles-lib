@@ -1,0 +1,37 @@
+// for each page/route view
+
+.page {
+    flex: 1;
+    @include flex-col;
+    width: 100%;
+	max-width: 100%;
+	padding: var(--defaultPagePaddingTop) var(--defaultPagePadding) var(--defaultPagePadding);
+
+	h1 {
+		font-size: 2em;
+		font-family: var(--font-bold);
+	}
+
+	h2 {
+		font-family: var(--font-bold);
+	}
+    
+    .link-list {
+        a {
+            margin: 5px;
+        }
+    }
+    
+}
+
+@include small-desktop {
+	.page {
+	}
+}
+
+
+@include mobile {
+	.page {
+		max-width: 100%;
+	}
+}

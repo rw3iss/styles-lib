@@ -1,0 +1,79 @@
+
+// @font-face {
+//   font-family: 'Open Sans';
+//   font-style: normal;
+//   font-weight: 300;
+//   src: url("static/fonts/open-sans/OpenSans-Regular.ttf") format('truetype');
+// }
+
+// @font-face {
+//   font-family: 'Open Sans Bold';
+//   font-style: bold;
+//   font-weight: 300;
+//   src: local('Open Sans Bold'), local('OpenSans-Bold'), url("static/fonts/open-sans/OpenSans-Bold.ttf") format('truetype');
+// }
+
+// Text sizing class helpers:
+// h = headers, t = normal text/font, s = sub/smaller fonts
+ 
+.h1, h1 {
+    @include h1;
+}
+
+.h2, h2 {
+    @include h2;
+}
+
+.h3, h3 {
+    @include h3;
+}
+
+.h4, h4 {
+    @include h4;
+}
+
+.h5, h5 {
+    @include h5;
+}
+
+
+.t1 {
+    @include t1;
+}
+
+.t2 {
+    @include t2;
+}
+
+.t3 {
+    @include t3;
+}
+
+.t4 {
+    @include t4;
+}
+
+.t5 {
+    @include t5;
+}
+
+
+.s1 {
+    @include s1;
+}
+
+.s2 {
+    @include s2;
+}
+
+.s3 {
+    @include s3;
+}
+
+.s4 {
+    @include s4;
+}
+
+.s5 {
+    @include s5;
+}

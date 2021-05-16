@@ -1,0 +1,26 @@
+input, textarea, select {
+    padding: var(--input-padding);
+    font-size: var(--input-font-size);
+    color: white;
+    background: rgb(50,60,70);
+    box-shadow: inset 1px 1px 3px rgba(0,0,0,.7);
+    border: none;
+    border-radius: var(--input-radius);
+    outline: none;
+    
+    &::placeholder {
+        color: #aaa;
+    }
+
+    &.small {
+        font-size: .85rem;
+        padding: 5px 7px;
+        min-height: calc(var(--defaultButtonHeight) * .75);
+    }
+    
+    &.large {
+        font-size: 1.25rem;
+        min-height: calc(var(--defaultButtonHeight) * 1.25);
+    }
+
+}

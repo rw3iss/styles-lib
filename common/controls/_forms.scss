@@ -1,0 +1,54 @@
+.form {
+    
+    label {
+        display: block;
+        white-space: nowrap;
+        margin-bottom: 5px;
+        font-size: .9rem;
+        color: var(--color-form-label);
+    }
+    
+    .input-row {
+        width: 100%;
+        margin: 5px 0 10px;
+        text-align: left;
+        
+        .row {
+            width: 100%;
+        }
+        
+        input, select, textarea {
+            width: 100%;
+        }
+        
+        .field-error {
+            color: var(--color-error);
+            margin: 4px 0 0 0;
+            font-size: .9rem;
+        }
+    }
+    
+    .button-row {
+        width: 100%;
+        @include flex-center-y();
+        
+        .button {
+            flex: 1;
+            margin: 0 5px;
+        }
+    }
+    
+    .status {
+        margin: 10px 0;
+        text-align: center;
+
+        &.error {
+            color: var(--color-error);
+        }
+        
+        &.success {
+            color: var(--color-success);
+        }
+    }
+    
+}

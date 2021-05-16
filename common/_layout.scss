@@ -1,0 +1,160 @@
+// classes that can be applied directly to html elements
+
+.full {
+    width: 100%;
+}
+
+.cols {
+    display: flex;
+}
+
+//padding helpers
+.pad-tn {
+    padding: calc(var(--defaultItemPadding) * .5);
+}
+
+.pad-md {
+    padding: var(--defaultItemPadding);
+}
+
+.pad-lg {
+    padding: calc(var(--defaultItemPadding) * 1.5);
+}
+
+//margin helpers
+.margin-tn {
+    margin: calc(var(--defaultItemPadding) * .5);
+}
+
+.margin-md {
+    margin: var(--defaultItemPadding);
+}
+
+.margin-lg {
+    margin: calc(var(--defaultItemPadding) * 1.5);
+}
+
+
+.align-start {
+    align-items: flex-start;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+// flexbox helpers
+.flex {
+    display: flex;
+	display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -ms-flexbox;
+    display: -o-flex;
+    
+    > *.fill {
+		flex-grow: 1;
+	    flex-shrink: 1;
+	    flex-basis: auto;
+	    align-self: auto;
+	}
+
+	> *.flex1 {
+		flex: 1;
+    }
+    
+	> *.flex2 {
+		flex: 2;
+    }
+    
+	> *.flex3 {
+		flex: 2;
+    }
+    
+	> *.flex4 {
+		flex: 4;
+    }
+    
+	> *.flex5 {
+		flex: 5;
+	}
+}
+
+.flex-row {
+    @extend .flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+}
+
+.flex-col {
+    @extend .flex;
+	flex-direction: column;
+}
+
+.flex-row-center  {
+    @extend .flex-row;
+    align-items: center;
+}
+
+.flex-center {
+    @extend .flex;
+	flex-direction: row;
+	justify-content: center;
+	-webkit-justify-content: center;
+	align-items: center;
+	-webkit-align-items: center;
+}
+
+.flex-col-center {
+    @extend .flex-col;
+	justify-content: center;
+	-webkit-justify-content: center;
+	align-items: center;
+	-webkit-align-items: center;
+}
+
+.flex-center-both {
+    @include flex-center-both;
+}
+
+.flex-col-center-both {
+    @include flex-center-both;
+	flex-direction: column;
+}
+
+.flex-wrap {
+    @extend .flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+}
+
+.flex-spread {
+    @extend .flex;
+	justify-content: space-around;
+	-webkit-justify-content: space-around;
+}
+
+.flex-no-wrap {
+    @extend .flex;
+	flex-wrap: nowrap;
+	-webkit-flex-wrap: nowrap;
+}
+
+.flex-fill {
+    @include flex-fill;
+}
+
+.flex-col-fill {
+    @include flex-col-fill;
+}
+
+.flex-end {
+    align-self: flex-end;
+    margin: 0 0 0 auto;
+}
